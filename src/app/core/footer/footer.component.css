@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    background-color: maroon;
+    color: bisque;
+}
+
+address {
+    margin-top: 2rem;
+}
