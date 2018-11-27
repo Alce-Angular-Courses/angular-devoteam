@@ -12,3 +12,12 @@
 <div class="mt-3">
   <p>Hola {{ nombre }}</p>
 </div>
+<div class="mt-3">
+  <h3>Expresiones</h3>
+  <p>Se peden hace operaciones aritméticas</p>
+  <p>La suma de 23 y 34 es {{23+34}}</p>
+  <p>Se pueden usar metodos de las variables</p>
+  <p>La Inicial del nombre elegido es {{ nombre.substr(0,1).toUpperCase() }}</p>
+  <p>Se puede usar el operador ternario</p>
+  <p>{{ (nombre==='amigo')? 'Escribe un nombre': ''}}</p>
+</div>
