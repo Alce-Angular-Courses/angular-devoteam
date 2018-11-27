@@ -1,11 +1,12 @@
 import { browser, by, element } from 'protractor';
 
-export class AppPage {
+export class HomePage {
+
   navigateTo() {
     return browser.get('/');
   }
 
-  getParagraphText() {
+  getTitleText() {
     return element(by.css('dvt-root h1')).getText();
   }
 }
