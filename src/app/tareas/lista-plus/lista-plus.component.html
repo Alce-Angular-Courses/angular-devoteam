@@ -1,0 +1,13 @@
+<dvt-new-tarea (evNewTarea)="addTarea($event)"></dvt-new-tarea>
+
+<div class="mt-3" [class.hide]="!aTareas.length">
+    <h3>Lista tareas</h3>
+    <ul class="list-group">
+      <li *ngFor="let item of aTareas; let i = index"
+      class="list-group-item row">
+        <dvt-tarea [oTarea]="item" [index]="i" 
+          (evDeleteTarea)="deleteTarea($event)"></dvt-tarea>
+      </li>
+    </ul>
+  </div>
+

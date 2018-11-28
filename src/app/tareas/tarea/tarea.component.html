@@ -1,0 +1,5 @@
+<input class="col-1"
+    type="checkbox" name="isCompleted" id="isCompleted" 
+      [(ngModel)]="oTarea.isCompleted">
+<span class="col-10">{{oTarea.nombre}}</span>
+<span class="borrar col-1" (click)='sendDeleteTarea()'>🗑️</span>

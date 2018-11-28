@@ -1,0 +1,8 @@
+<div class="form-group">
+  <label for="tarea">Describe la tarea</label>
+  <input type="text" class="form-control" 
+    name="tarea" id="tarea"  placeholder=""
+    [(ngModel)]="oTarea.nombre">
+</div>
+<button type="button" class="btn btn-primary"
+  (click)="sendAddTarea()">Añadir</button>

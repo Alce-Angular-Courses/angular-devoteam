@@ -5,9 +5,12 @@ import { TareasRoutingModule } from './tareas-routing.module';
 import { TareasComponent } from './tareas.component';
 import { ListaSimpleComponent } from './lista-simple/lista-simple.component';
 import { FormsModule } from '@angular/forms';
+import { ListaPlusComponent } from './lista-plus/lista-plus.component';
+import { TareaComponent } from './tarea/tarea.component';
+import { NewTareaComponent } from './new-tarea/new-tarea.component';
 
 @NgModule({
-  declarations: [TareasComponent, ListaSimpleComponent],
+  declarations: [TareasComponent, ListaSimpleComponent, ListaPlusComponent, TareaComponent, NewTareaComponent],
   imports: [
     CommonModule,
     FormsModule,
