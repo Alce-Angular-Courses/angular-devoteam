@@ -10,6 +10,7 @@ import { AboutModule } from './about/about.module';
 import { BlogModule } from './blog/blog.module';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { CursosModule } from './cursos/cursos.module';
 
 // the second parameter 'es' is optional
 registerLocaleData(localeEs, 'es');
@@ -27,7 +28,8 @@ registerLocaleData(localeEs, 'es');
     HomeModule,
     TareasModule,
     AboutModule,
-    BlogModule
+    BlogModule,
+    CursosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

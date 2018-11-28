@@ -1,0 +1,72 @@
+<h4>Formulario TemplateDriven</h4>
+<form name="form-td">
+    <fieldset>
+        <legend>Datos de usuario</legend>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" 
+                    id="nombre" name="nombre" [(ngModel)]="oAlumno.nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" 
+                    name="apellidos" id="apellidos" [(ngModel)]="oAlumno.apellidos">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" class="form-control" 
+                    name="email" id="email" [(ngModel)]="oAlumno.email">
+            </div>        
+    </fieldset>
+  <fieldset >
+    <legend>Datos del curso</legend>
+        <div class="form-check">
+            <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" 
+                name="isOk" id="isOk" [(ngModel)]="oAlumno.isOk">
+            Estoy de acuerdo con las normas del curso
+            </label>
+        </div>  
+        <div>
+            <legend>Turno</legend>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" 
+                    name="turno" id="" [(ngModel)]="oAlumno.turno"
+                    value="mañana">
+                Mañana
+            </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" 
+                    name="turno" id="" [(ngModel)]="oAlumno.turno"
+                    value="tarde">
+                Tarde
+            </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" 
+                    name="turno" id="" [(ngModel)]="oAlumno.turno"
+                    value="noche">
+                Noche
+            </label>
+            </div>            
+        </div>  
+        <div class="form-group" >
+        <label for="curso">Selecciona el tema</label>
+            <select class="form-control" 
+                name="curso" id="curso" [(ngModel)]="oAlumno.curso">
+                <option *ngFor="let item of aCursos" [ngValue]="item">
+                    {{item.nombre}}
+                </option>
+            </select>
+        </div>
+  </fieldset>
+  <button type="submit" class="btn btn-primary">
+      Enviar</button>
+</form>
+<div class="mt-2">
+    <p>{{ oAlumno | json }}</p>
+</div>
