@@ -8,9 +8,16 @@ import { FormsModule } from '@angular/forms';
 import { ListaPlusComponent } from './lista-plus/lista-plus.component';
 import { TareaComponent } from './tarea/tarea.component';
 import { NewTareaComponent } from './new-tarea/new-tarea.component';
+import { ImportantDirective } from './important.directive';
 
 @NgModule({
-  declarations: [TareasComponent, ListaSimpleComponent, ListaPlusComponent, TareaComponent, NewTareaComponent],
+  declarations: [
+    TareasComponent,
+    ListaSimpleComponent,
+    ListaPlusComponent,
+    TareaComponent,
+    NewTareaComponent,
+    ImportantDirective],
   imports: [
     CommonModule,
     FormsModule,
