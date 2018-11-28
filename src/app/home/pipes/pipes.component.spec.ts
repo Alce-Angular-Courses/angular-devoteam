@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PipesComponent } from './pipes.component';
+import { TruncatePipe } from '../truncate.pipe';
 
 describe('PipesComponent', () => {
   let component: PipesComponent;
@@ -8,7 +9,10 @@ describe('PipesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PipesComponent ]
+      declarations: [
+        PipesComponent,
+        TruncatePipe
+       ]
     })
     .compileComponents();
   }));

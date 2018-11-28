@@ -1,6 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TareasComponent } from './tareas.component';
+import { ListaSimpleComponent } from './lista-simple/lista-simple.component';
+import { ListaPlusComponent } from './lista-plus/lista-plus.component';
+import { FormsModule } from '@angular/forms';
+import { NewTareaComponent } from './new-tarea/new-tarea.component';
+import { Tarea } from '../models/tarea.model';
+import { TareaComponent } from './tarea/tarea.component';
 
 describe('TareasComponent', () => {
   let component: TareasComponent;
@@ -8,7 +14,14 @@ describe('TareasComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TareasComponent ]
+      declarations: [
+        TareasComponent,
+        ListaSimpleComponent,
+        ListaPlusComponent,
+        NewTareaComponent,
+        TareaComponent
+       ],
+       imports: [FormsModule]
     })
     .compileComponents();
   }));

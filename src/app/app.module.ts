@@ -7,10 +7,9 @@ import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { TareasModule } from './tareas/tareas.module';
 import { AboutModule } from './about/about.module';
-
+import { BlogModule } from './blog/blog.module';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
-import { BlogModule } from './blog/blog.module';
 
 // the second parameter 'es' is optional
 registerLocaleData(localeEs, 'es');
