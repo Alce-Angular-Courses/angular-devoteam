@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+      <h4 class="card-title">Uso de Pipes</h4>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Producto: {{ producto | titlecase }}</p>
+    <p>Altura: {{ altura | number : '2.2-2' : 'ES'}}</p>
+    <p>Precio: {{ precio | currency : 'EUR' : 'symbol' : '' : 'ES'}}</p>
+    <p>{{ oDatos | json}}</p>
+    <p>{{ frase | truncate : 14}}</p>
+  </div>
+  <div class="card-footer text-muted">
+    <p>{{ fecha | date : 'fullDate': '' : 'ES'  | titlecase }}</p>
+  </div>
+</div>

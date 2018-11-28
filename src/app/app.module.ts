@@ -8,6 +8,13 @@ import { HomeModule } from './home/home.module';
 import { TareasModule } from './tareas/tareas.module';
 import { AboutModule } from './about/about.module';
 
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+
+// the second parameter 'es' is optional
+registerLocaleData(localeEs, 'es');
+
+
 @NgModule({
   declarations: [
     AppComponent
