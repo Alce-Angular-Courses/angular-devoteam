@@ -21,6 +21,7 @@ import { TruncatePipe } from './truncate.pipe';
     CommonModule,
     FormsModule,
     HomeRoutingModule
-  ]
+  ],
+  providers: []
 })
 export class HomeModule { }
