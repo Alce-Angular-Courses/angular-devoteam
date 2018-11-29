@@ -16,7 +16,7 @@ export class BooksService {
     return this.aLibros;
   }
 
-  getLibrosAsync (clave) {
+  getLibrosAsync (clave): Promise<Array<Libro>> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(this.aLibros);
