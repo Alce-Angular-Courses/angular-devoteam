@@ -1,10 +1,10 @@
 <h4>Formulario TemplateDriven</h4>
-<form name="form-td"">
+<form name="form-td">
     <fieldset>
         <legend>Datos de usuario</legend>
             <div class="form-group">
                 <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" name="nombre" id="nombre">
+                <input type="text" class="form-control" required name="nombre" id="nombre">
             </div>
             <div class="form-group">
                 <label for="apellidos">Apellidos</label>
@@ -30,7 +30,7 @@
             <div class="form-check">
             <label class="form-check-label">
                 <input type="radio" class="form-check-input" name="turno" id=""
-                value="mañana">
+                value="mañana" required>
                 Mañana
             </label>
             </div>
@@ -51,10 +51,11 @@
         </div>  
         <div class="form-group" >
         <label for="curso">Selecciona el tema</label>
-            <select class="form-control" name="curso" id="curso">
-                <option>Angular</option>
-                <option>React</option>
-                <option>Vue</option>
+            <select class="form-control" name="curso" id="curso" required>
+                <option value=""></option>
+                <option value="angular">Angular</option>
+                <option value="react">React</option>
+                <option value="vue">Vue</option>
             </select>
         </div>
   </fieldset>
