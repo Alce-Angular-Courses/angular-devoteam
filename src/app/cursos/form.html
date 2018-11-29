@@ -1,5 +1,5 @@
 <h4>Formulario TemplateDriven</h4>
-<form name="form-td">
+<form name="form-td" id ="form-td">
     <fieldset>
         <legend>Datos de usuario</legend>
             <div class="form-group">
@@ -62,3 +62,12 @@
   <button type="submit" class="btn btn-primary">
       Enviar</button>
 </form>
+
+<script>
+    document.querySelector('#form-td').addEventListener(
+        'submit', (ev) => { 
+            console.log("Enviando")
+            ev.preventDefault()
+        }
+    )
+</script>

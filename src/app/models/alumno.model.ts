@@ -18,7 +18,9 @@ export class Alumno {
         public email: string = '',
         public isOk: boolean = false,
         public turno: Turno = {id: '', nombre: '', horario: ''},
-        public curso: Curso = {id: '', nombre: '', descripcion: ''}) {
+        public curso = {id: '', nombre: '', descripcion: ''}) {
     }
 }
 
+// public turno: Turno = {id: '', nombre: '', horario: ''},
+// public curso: Curso = {id: '', nombre: '', descripcion: ''})
