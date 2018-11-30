@@ -1,0 +1,33 @@
+<div class="form-group">
+  <label for="id">Id</label>
+  <input type="text" class="form-control" 
+  name="id" id="id" [(ngModel)]="oUser.id">
+</div>
+<div class="form-group">
+  <label for="name">Nombre</label>
+  <input type="text" class="form-control" 
+  name="name" id="name" [(ngModel)]="oUser.name">
+</div>
+<div class="form-group">
+  <label for="email">Correo</label>
+  <input type="text" class="form-control" 
+  name="email" id="email" [(ngModel)]="oUser.email">
+</div>
+<div class="btn-group" role="group" aria-label="">
+  <button type="button" class="btn btn-primary"
+    (click)="getUser()">Buscar</button>
+  <button type="button" class="btn btn-primary"
+  (click)="addUser()">Añadir</button>
+  <button type="button" class="btn btn-primary"
+  (click)="modifyUser()">Modificar</button>
+  <button type="button" class="btn btn-primary"
+  (click)="deleteUser()">Borrar</button>
+</div>
+<div *ngIf="aUsers.length">
+  <h4>Resultado</h4>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of aUsers">
+      {{item.name}} | {{item.email}}
+    </li>
+  </ul>
+</div>

@@ -15,6 +15,7 @@ import localeEs from '@angular/common/locales/es';
 import { CursosModule } from './cursos/cursos.module';
 import { LibrosModule } from './libros/libros.module';
 import { from } from 'rxjs';
+import { UsersModule } from './users/users.module';
 
 // the second parameter 'es' is optional
 registerLocaleData(localeEs, 'es');
@@ -37,7 +38,8 @@ registerLocaleData(localeEs, 'es');
     AboutModule,
     BlogModule,
     CursosModule,
-    LibrosModule
+    LibrosModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
