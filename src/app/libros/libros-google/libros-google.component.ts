@@ -21,15 +21,21 @@ export class LibrosGoogleComponent implements OnInit {
   }
 
   buscar() {
-    if (!this.clave) {return false; }
-    const url = this.baseURL + this.clave;
+    if (!this.clave) {return false; }    const url = this.baseURL + this.clave;
     this.http.get(url).toPromise().then(
-      (data: any) =>  {
-        let aData = [];
-        aData = data.items.map(
-          (item) => item.volumeInfo.title
-        );
-        console.log(aData); },
+      (response: any) =>  {
+        // let aData = [];
+        this.aLibros = response.items.map(
+          (item) => {
+            const libro = new Libro();
+            libro.id = item.id;
+            libro.titulo = item.volumeInfo.title;
+            if (item.volumeInfo.authors) {
+              libro.autor = item.volumeInfo.authors.join(' | ');
+            }
+            return libro;
+          });
+        console.log(this.aLibros); },
       (error) => {console.log(error); }
     );
   }
