@@ -5,9 +5,10 @@ import { UsersRoutingModule } from './users-routing.module';
 import { UsersComponent } from './users.component';
 import { ListaComponent } from './lista/lista.component';
 import { FormsModule } from '@angular/forms';
+import { DetalleComponent } from './detalle/detalle.component';
 
 @NgModule({
-  declarations: [UsersComponent, ListaComponent],
+  declarations: [UsersComponent, ListaComponent, DetalleComponent],
   imports: [
     CommonModule,
     FormsModule,
